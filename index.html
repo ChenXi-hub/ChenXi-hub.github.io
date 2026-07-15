@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Chenxi He - LLM agents, agentic memory, scientific AI agents, and multi-agent systems." />
+  <title>Chenxi He</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">Chenxi He</a>
+    <nav aria-label="Primary navigation">
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#research">Research</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">LLM Agents · Agentic Memory · Scientific AI</p>
+        <h1>Building research agents that remember, route, and reason.</h1>
+        <p class="lead">
+          I am an AI undergraduate at Tianjin University Future Technology College and an incoming graduate student at the Gaoling School of Artificial Intelligence, Renmin University of China. My work focuses on LLM agents, agentic memory, multi-agent systems, and skill routing for scientific AI agents.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="mailto:3022202220@tju.edu.cn">Email Me</a>
+          <a class="button" href="https://github.com/ChenXi-hub">GitHub</a>
+        </div>
+      </div>
+      <div class="portrait-wrap" aria-label="Portrait of Chenxi He">
+        <img src="assets/portrait.jpg" alt="Chenxi He" />
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="section-heading">
+        <p class="eyebrow">Experience</p>
+        <h2>Recent Work</h2>
+      </div>
+      <div class="timeline">
+        <article class="entry">
+          <div>
+            <h3>Alibaba DAMO Academy</h3>
+            <p class="meta">Algorithm Intern · Mar. 2026 - Present</p>
+          </div>
+          <div>
+            <p>
+              Skill-direction algorithm lead for NobelClaw, a scientific AI Agent platform. I work on skill-system design, tool routing, execution-chain modeling, and feedback loops that let agents select research capabilities across experimental design, literature analysis, and code execution.
+            </p>
+            <ul>
+              <li>Designed progressive skill routing and two-level tool disclosure for 5 scientific domains and 27 tools.</li>
+              <li>Reduced first-turn LLM payload by approximately 90% while maintaining full tool coverage.</li>
+              <li>Built evaluation workflows with mock mode, failure injection, and LLM-as-judge scoring.</li>
+              <li>NobelClaw was selected for the UN AI for Good case collection and the 2026 World Artificial Intelligence Conference product track.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div>
+            <h3>Andon Health</h3>
+            <p class="meta">Large Language Model Algorithm Intern · Aug. 2025 - Mar. 2026</p>
+          </div>
+          <div>
+            <p>
+              Built AICGM-Agentic AI, an AutoGen-based multi-agent customer-service system for chronic diabetes care, covering abnormal glucose alerts, health consultation, and care guidance.
+            </p>
+            <ul>
+              <li>Built a LoRA SFT pipeline for Qwen2.5-32B with LLaMA-Factory.</li>
+              <li>Implemented GRPO with veRL to align the agent with human care-provider preferences.</li>
+              <li>Improved internal patient-satisfaction evaluation by 31%.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">Selected Projects</p>
+        <h2>Systems And Research</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project">
+          <p class="tag">Agentic Memory</p>
+          <h3>DeepMem: Deep Memory Passing for LLM Agents</h3>
+          <p>
+            Proposed DeepMem to address stale memory caused by single-hop updates and shallow retrieval in long-horizon LLM agents. DeepMem performs multi-hop write-time memory updates and read-time graph propagation without adding query-time LLM calls.
+          </p>
+          <div class="stats">
+            <span>+15.7% F1 on Qwen2.5-1.5B</span>
+            <span>+58.0% F1 on Qwen2.5-3B</span>
+            <span>70.60 Overall on LongMemEval-S</span>
+          </div>
+        </article>
+
+        <article class="project">
+          <p class="tag">Scientific AI Agents</p>
+          <h3>NobelClaw Skill Routing</h3>
+          <p>
+            Designed a progressive skill routing system for scientific workflows, combining task decomposition, skill retrieval, tool constraints, and execution feedback. The system supports 5 scientific domains and 27 tools.
+          </p>
+          <div class="stats">
+            <span>~90% first-turn payload reduction</span>
+            <span>LLM-as-judge evaluation</span>
+            <span>UN AI for Good case collection</span>
+          </div>
+        </article>
+
+        <article class="project">
+          <p class="tag">Embodied AI</p>
+          <h3>3D Point-Cloud Affordance & Pose</h3>
+          <p>
+            Explored joint learning of language-conditioned affordance detection and pose estimation in 3D environments. Contributed to a deployed point-cloud dataset and introduced PointViT into point-cloud processing for grasp-pose estimation.
+          </p>
+          <div class="stats">
+            <span>3D point-cloud learning</span>
+            <span>Vision-language modeling</span>
+            <span>Grasp-pose estimation</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="research">
+      <div class="section-heading">
+        <p class="eyebrow">Research Interests</p>
+        <h2>What I Am Exploring</h2>
+      </div>
+      <div class="interest-list">
+        <div>
+          <h3>Long-Horizon Agent Memory</h3>
+          <p>How should agents update, retrieve, and validate evolving memories across multi-session interactions?</p>
+        </div>
+        <div>
+          <h3>Skill Routing For Agents</h3>
+          <p>How can agents choose the right capabilities with compact prompts, reliable tool calls, and measurable behavior?</p>
+        </div>
+        <div>
+          <h3>Scientific AI Agents</h3>
+          <p>How can agent systems support real research workflows, from literature analysis to experiment design and execution?</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="contact">
+      <div class="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let's build agents that do useful work.</h2>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:3022202220@tju.edu.cn">3022202220@tju.edu.cn</a>
+          <a href="https://github.com/ChenXi-hub">github.com/ChenXi-hub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
